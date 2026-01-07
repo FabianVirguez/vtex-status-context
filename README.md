@@ -23,6 +23,17 @@ Before using this extension, ensure you have:
 ### From Marketplace
 Search for **"Vtex Status Context"** in the VS Code Extensions view and click **Install**.
 
+### Using VSIX (Offline/Manual)
+If you have a `.vsix` file:
+1.  Open the **Extensions** view in VS Code (`Ctrl+Shift+X`).
+2.  Click on the **three dots** (`...`) in the top-right corner.
+3.  Select **"Install from VSIX..."**.
+4.  Choose the `.vsix` file.
+
+To generate the VSIX yourself:
+1.  Install the CLI: `npm install -g @vscode/vsce`
+2.  Run: `vsce package`
+
 ### Manual Installation (Development)
 1. Clone this repository.
 2. Run `npm install` to install dependencies.

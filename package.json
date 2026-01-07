@@ -5,8 +5,12 @@
   "icon": "assets/vtex-status-icon.png",
   "version": "0.0.1",
   "publisher": "antigravity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabianVirguez/vtex-status-context.git"
+  },
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.104.0"
   },
   "categories": [
     "Other"
@@ -20,7 +24,7 @@
     "VTEX Toolbelt"
   ],
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "main": "./output/extension.js",
   "contributes": {
@@ -36,10 +40,11 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts"
+    "lint": "eslint src --ext ts",
+    "package": "vsce package"
   },
   "devDependencies": {
-    "@types/vscode": "^1.107.0",
+    "@types/vscode": "^1.104.0",
     "@types/node": "^16.18.126",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
