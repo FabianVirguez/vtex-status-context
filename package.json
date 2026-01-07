@@ -1,0 +1,49 @@
+{
+  "name": "vtex-status-context",
+  "displayName": "Vtex Status Context",
+  "description": "Vtex Status Context is a Antigravity extension that allows you to show VTEX account/workspace informations in the status bar.",
+  "icon": "assets/vtex-status-icon.png",
+  "version": "0.0.1",
+  "publisher": "antigravity",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "statusbar",
+    "status",
+    "workspace",
+    "VTEX",
+    "VTEX CLI",
+    "VTEX Toolbelt"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./output/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vtex-status-context.whoami",
+        "category": "VTEX",
+        "title": "whoami"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/node": "^16.18.126",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "typescript": "^4.9.5"
+  }
+}
