@@ -4,6 +4,8 @@
 
 This extension works in partnership with the [VTEX Toolbelt](https://github.com/vtex/toolbelt). It monitors your local VTEX session and automatically updates whenever you switch accounts or workspaces via the CLI.
 
+![Extension Preview](assets/preview.png)
+
 ## ✨ Features
 
 - **Real-time Monitoring**: Automatically detects changes in your VTEX session.
