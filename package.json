@@ -4,7 +4,7 @@
   "description": "Vtex Status Context is a Antigravity extension that allows you to show VTEX account/workspace informations in the status bar.",
   "icon": "assets/vtex-status-icon.png",
   "version": "0.0.1",
-  "publisher": "antigravity",
+  "publisher": "fabianvirguez",
   "repository": {
     "type": "git",
     "url": "https://github.com/FabianVirguez/vtex-status-context.git"
